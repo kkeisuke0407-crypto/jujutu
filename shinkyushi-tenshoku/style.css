@@ -20,15 +20,10 @@ body { padding-bottom: 90px; } /* mt-sticky のぶん */
 .lp-fv__lead { margin: 0 !important; font-size: 16px; line-height: 1.8; }
 .lp-fv__lead b { color: var(--mt-red); }
 
-/* スマホ：上に文字、下に人物（画像の上端は背景色になじませる） */
+/* スマホ：縦長のFV画像（上に壁を足したもの）の、壁の部分に文字を入れる */
 @media (max-width: 599px) {
-  .lp-fv { padding: 28px 20px 290px;
-    background-image:
-      linear-gradient(180deg, #f7f5f2 0, #f7f5f2 calc(100% - 300px), rgba(247,245,242,0) calc(100% - 250px)),
-      url("images/fv-hero.webp");
-    background-repeat: no-repeat;
-    background-size: 100% 100%, auto 300px;
-    background-position: 0 0, 85% 100%; }
+  .lp-fv { aspect-ratio: 750 / 1161; padding: 26px 20px;
+    background: url("images/fv-hero-sp.webp") center top / cover no-repeat, #f7f5f2; }
 }
 /* PC：画像の左の余白に文字を重ねる */
 @media (min-width: 600px) {
@@ -48,3 +43,7 @@ body { padding-bottom: 90px; } /* mt-sticky のぶん */
 
 /* サービス説明後のCTA：ページ中央の主CTAなので、見出し文字を1行足して強める（v7） */
 .lp-cta-lead { margin: 0 0 .4em !important; font-size: 22px; font-weight: 900; line-height: 1.4; color: var(--mt-blue); }
+
+/* 公式バナー（mt-banner）：画像を入れる。見本ページと同じく幅を抑えて中央に */
+.mt-banner { max-width: 420px; margin-left: auto; margin-right: auto; }
+.mt-banner img { display: block; width: 100%; height: auto; border-radius: 4px; }
