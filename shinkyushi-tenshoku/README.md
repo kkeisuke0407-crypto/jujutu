@@ -13,10 +13,9 @@
 | `index.html` | 本文。FV以外はすべて mt-* パーツ |
 | `parts.css` | パーツ集の `parts.css` を**無改変**でコピー（41パーツ版） |
 | `style.css` | ページ枠（見本ページと同じ `mt-wrap` / `mt-figure`）、改行の調整（`lp-nw`＝語句の途中で切らない）、v7で専用指定のFV、中央寄せ強調、主CTAの見出し1行 |
-| `images/fv-hero.webp` | FV背景（PC）。考える鍼灸師の画像（1400×788）。左の余白に文字を重ねる |
-| `images/fv-hero-sp.webp` | FV背景（スマホ）。同じ画像を人物中心に縦長で切り出したもの（750×1080）。顔は上に出したまま、文字は下半分（体の上）に重ねる |
+| `images/fv-hero.webp` | FV背景。考える鍼灸師の画像（1400×788）。スマホもPCも元の16:9のまま表示し、左の明るい部分に文字を重ねる（文字サイズだけ画面幅に合わせる） |
 | `images/kurohon-banner.webp` | 国試黒本治療家エージェントの公式バナー（600×500）。`mt-banner` でPR表記つき |
-| `images/shinkyushi-nayami.webp` | SECTION1 ①の後の挿絵「もっと鍼を打てる職場がいいかも…」（900×675） |
+| `images/shinkyushi-nayami.webp` | SECTION1 の大見出しの直下の挿絵「もっと鍼を打てる職場がいいかも…」（900×675） |
 | `images/kyujin-3rei.webp` | SECTION2 求人例A/B/Cの比較画像（1200×675）。タップで拡大表示 |
 
 ## 公開前にやること
@@ -32,7 +31,7 @@
 | 1. FV | 専用ヒーロー（背景画像＋HTMLテキスト、「どれくらい鍼を打てるか」を最大）。CTAは置かない |
 | 2. 会話 | `mt-talk`（右＝Aさん／左＝Bさん、4吹き出し、黄マーカーは答えの予告1か所）→ `mt-oneline`「中身はかなり違う。」 |
 | 3. 早期CTA | `mt-cta`（`#cta-early`）。ここを過ぎたら `mt-sticky` を表示 |
-| 4. 4つの中身 | `mt-check` で4項目 → 各項目 `mt-h4`＋本文、①の後に挿絵 → 中央寄せ強調 |
+| 4. 4つの中身 | `mt-check` で4項目 → 大見出しの直下に挿絵、各項目 `mt-h4`＋本文 → 中央寄せ強調 |
 | 5. 求人3例 | 比較画像1枚 ＋ `mt-small` ＋ `mt-conclusion`（HTMLのカードは使わない） |
 | 6. 中間CTA | `mt-textlink` |
 | 7. 自分で比べるのは大変 | `mt-worry` ＋ 本文 ＋ 普通のul → `mt-bridge`（＼サービス名／）→ 公式バナー `mt-banner` → サービス早見 `mt-spec`（おすすめポイント＋評価表＋公式サイトボタン） |
