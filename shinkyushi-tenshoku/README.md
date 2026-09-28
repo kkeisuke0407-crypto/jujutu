@@ -14,7 +14,7 @@
 | `parts.css` | パーツ集の `parts.css` を**無改変**でコピー（41パーツ版） |
 | `style.css` | ページ枠（見本ページと同じ `mt-wrap` / `mt-figure`）、改行の調整（`lp-nw`＝語句の途中で切らない）、v7で専用指定のFV、中央寄せ強調、主CTAの見出し1行 |
 | `images/fv-hero.webp` | FV背景（PC）。考える鍼灸師の画像（1400×788）。左の余白に文字を重ねる |
-| `images/fv-hero-sp.webp` | FV背景（スマホ）。同じ画像の人物側を切り出し、上に壁を足して縦長にしたもの（750×1161）。壁の部分に文字を入れる |
+| `images/fv-hero-sp.webp` | FV背景（スマホ）。同じ画像を人物中心に縦長で切り出したもの（750×1080）。顔は上に出したまま、文字は下半分（体の上）に重ねる |
 | `images/kurohon-banner.webp` | 国試黒本治療家エージェントの公式バナー（600×500）。`mt-banner` でPR表記つき |
 | `images/shinkyushi-nayami.webp` | SECTION1 ①の後の挿絵「もっと鍼を打てる職場がいいかも…」（900×675） |
 | `images/kyujin-3rei.webp` | SECTION2 求人例A/B/Cの比較画像（1200×675）。タップで拡大表示 |
