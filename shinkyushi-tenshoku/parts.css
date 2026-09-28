@@ -25,6 +25,11 @@
 .mt-worry { margin: 1em 0 .8em !important; color: var(--mt-red); font-size: 18px; font-weight: 700; line-height: 1.6; }
 .mt-oneline { margin: 1.2em 0 !important; font-size: 18px; font-weight: 700; line-height: 1.6; }
 .mt-oneline span { background: linear-gradient(transparent 55%, var(--mt-mark) 55%); }
+/* サービス名の登場（つなぎ） */
+.mt-bridge { margin: 2em 0 1.4em; text-align: center; }
+.mt-bridge__s { margin: 0 0 .1em !important; font-size: 16px; font-weight: 700; }
+.mt-bridge__name { margin: 0 !important; font-size: min(24px, 6vw); font-weight: 900; line-height: 1.5; white-space: nowrap; color: var(--mt-blue); }
+.mt-bridge__name span { color: var(--mt-ink); background: linear-gradient(transparent 55%, var(--mt-mark) 55%); }
 .mt-small { font-size: 12px !important; color: var(--mt-sub); line-height: 1.6 !important; }
 
 /* 横スクロール比較表 */
