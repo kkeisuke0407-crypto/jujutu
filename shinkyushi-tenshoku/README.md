@@ -4,6 +4,7 @@
 - パーツ: `hozon/LPパーツ集_体験談ランキング型/`（mt-*）をそのまま使用
 - 対象: スマートフォン（375px基準）
 - 用途: A8/広告主審査提出用・Google検索広告用（Base KW: 鍼灸師 転職）
+- 公開URL: https://chiryoka.hakobu-family.com/shinkyushi-tenshoku/ （GitHub Pages。ルート `/` はここへ転送）
 
 | ファイル | 中身 |
 |---|---|
