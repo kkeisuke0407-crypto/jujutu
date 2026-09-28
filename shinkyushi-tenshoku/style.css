@@ -26,5 +26,11 @@ img { max-width: 100%; height: auto; }
 /* 本文中の中央寄せ強調（v7「ボックスにせず通常中央寄せ強調」） */
 .lp-center { text-align: center; font-size: 18px; font-weight: 700; line-height: 1.6; }
 
+/* SECTION3→4のつなぎ：サービス名を中央・大きく（mt-oneline を拡大） */
+.lp-bridge { margin: 2em 0 1.4em; text-align: center; }
+.lp-bridge__s { margin: 0 0 .1em !important; font-size: 16px; font-weight: 700; }
+.lp-bridge__name { margin: 0 !important; font-size: min(24px, 6vw); font-weight: 900; line-height: 1.5; white-space: nowrap; color: var(--mt-blue); }
+.lp-bridge__name span { color: var(--mt-ink); }
+
 /* サービス説明後のCTA：ページ中央の主CTAなので、見出し文字を1行足して強める（v7） */
 .lp-cta-lead { margin: 0 0 .4em !important; font-size: 22px; font-weight: 900; line-height: 1.4; color: var(--mt-blue); }
