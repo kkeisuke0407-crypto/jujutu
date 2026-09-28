@@ -1,6 +1,6 @@
 /* ==== このページの枠（国試黒本治療家エージェント／体験談ランキング型） ====
    部品の見た目は parts.css（LPパーツ集_体験談ランキング型・無改変）。
-   ここには、見本ページ（k18-kihei-kaitori）と同じページ枠と、
+   ここには、見本ページ（k18-kihei-kaitori）と同じページ枠、改行の調整、
    台本v7で「既存パーツに無理にはめず専用で」と指定された FV だけを置く。 */
 *, *::before, *::after { box-sizing: border-box; }
 body { margin: 0; background: #fff; padding-bottom: 90px; } /* mt-sticky のぶん */
@@ -9,28 +9,44 @@ img { max-width: 100%; height: auto; }
 .mt-figure { margin: 1.2em 0; }
 .mt-figure img { display: block; width: 100%; border-radius: 6px; }
 
-/* ---- FV（専用ヒーロー）：背景画像＋HTMLテキスト。カード・黄色箱・青帯は使わない ---- */
-.lp-fv { position: relative; margin: 0 -16px 1.2em; padding: 26px 18px 170px;
-  background:
-    linear-gradient(180deg, rgba(255,255,255,.95) 0%, rgba(255,255,255,.9) 62%, rgba(255,255,255,0) 86%),
-    url("images/fv-hero.webp") right bottom / cover no-repeat,
-    #eef5fc; }
-.lp-fv__kicker { margin: 0 0 .15em !important; font-size: 19px; font-weight: 700; line-height: 1.4; color: var(--mt-ink); }
-.lp-fv__ttl { margin: 0 0 .7em; font-size: 23px; font-weight: 700; line-height: 1.45; color: var(--mt-ink); }
-.lp-fv__key { display: inline-block; font-size: 38px; font-weight: 900; line-height: 1.2; color: var(--mt-blue); letter-spacing: .01em; }
-.lp-fv__lead { margin: 0 0 .5em !important; font-size: 16px; line-height: 1.8; }
+/* ---- 改行：本文は自然に折り返し、見出し・強調は語句の途中で切らない ---- */
+.mt-body p, .mt-body li { text-wrap-style: pretty; } /* text-wrap（一括指定）だとパーツの nowrap を上書きするので -style だけ */
+.mt-h2, .mt-h3, .mt-h4, .mt-oneline, .mt-worry, .mt-cta__micro, .mt-conclusion__ttl, .lp-center { text-wrap-style: balance; }
+.lp-nw { display: inline-block; } /* この中では改行しない（語句のまとまり） */
+
+/* ---- FV（専用ヒーロー）：背景画像＋HTMLテキスト。カード・黄色箱・青帯・CTAは置かない ---- */
+.lp-fv { margin: 0 -16px 1.6em; background-color: #f7f5f2; }
+.lp-fv__kicker { margin: 0 0 .2em !important; font-size: 17px; font-weight: 700; line-height: 1.5; color: var(--mt-ink); }
+.lp-fv__ttl { margin: 0 0 .7em; font-size: 20px; font-weight: 700; line-height: 1.5; color: var(--mt-ink); }
+.lp-fv__key { display: block; margin: .1em 0; font-size: min(28px, 6.6vw); font-weight: 900; line-height: 1.35; color: var(--mt-blue); }
+.lp-fv__lead { margin: 0 !important; font-size: 16px; line-height: 1.8; }
 .lp-fv__lead b { color: var(--mt-red); }
-.lp-fv-cta { margin: -120px 0 0; position: relative; }
-.lp-fv-cta .mt-cta { margin-top: 0; }
+
+/* スマホ：上に文字、下に人物（画像の上端は背景色になじませる） */
+@media (max-width: 599px) {
+  .lp-fv { padding: 28px 20px 290px;
+    background-image:
+      linear-gradient(180deg, #f7f5f2 0, #f7f5f2 calc(100% - 300px), rgba(247,245,242,0) calc(100% - 250px)),
+      url("images/fv-hero.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%, auto 300px;
+    background-position: 0 0, 85% 100%; }
+}
+/* PC：画像の左の余白に文字を重ねる */
+@media (min-width: 600px) {
+  .lp-fv { display: flex; flex-direction: column; justify-content: center; margin: 0 0 1.6em; aspect-ratio: 16 / 9; padding: 32px 36px; border-radius: 6px;
+    background-image:
+      linear-gradient(90deg, rgba(255,255,255,.9) 0, rgba(255,255,255,.75) 42%, rgba(255,255,255,0) 58%),
+      url("images/fv-hero.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+    background-position: 0 0, center; }
+  .lp-fv > * { max-width: 56%; }
+  .lp-fv__key { font-size: 27px; }
+}
 
 /* 本文中の中央寄せ強調（v7「ボックスにせず通常中央寄せ強調」） */
 .lp-center { text-align: center; font-size: 18px; font-weight: 700; line-height: 1.6; }
-
-/* SECTION3→4のつなぎ：サービス名を中央・大きく（mt-oneline を拡大） */
-.lp-bridge { margin: 2em 0 1.4em; text-align: center; }
-.lp-bridge__s { margin: 0 0 .1em !important; font-size: 16px; font-weight: 700; }
-.lp-bridge__name { margin: 0 !important; font-size: min(24px, 6vw); font-weight: 900; line-height: 1.5; white-space: nowrap; color: var(--mt-blue); }
-.lp-bridge__name span { color: var(--mt-ink); }
 
 /* サービス説明後のCTA：ページ中央の主CTAなので、見出し文字を1行足して強める（v7） */
 .lp-cta-lead { margin: 0 0 .4em !important; font-size: 22px; font-weight: 900; line-height: 1.4; color: var(--mt-blue); }
