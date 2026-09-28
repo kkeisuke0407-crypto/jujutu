@@ -1,0 +1,27 @@
+/* ==== 治療家キャリアノート：サイト共通の枠 ====
+   部品の見た目は各LPフォルダの parts.css（LPパーツ集_体験談ランキング型・無改変）。
+   ここには全ページ共通のページ枠・サイト名の帯・フッター・ポリシーページの体裁だけを置く。 */
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: #fff; }
+img { max-width: 100%; height: auto; }
+.mt-wrap { max-width: 680px; margin: 0 auto; padding: 0 16px 24px; }
+.mt-title { margin: 1em 0 .6em; font-size: 22px; font-weight: 700; line-height: 1.5; }
+.mt-sitebar a { color: inherit; text-decoration: none; }
+.mt-sitebar--foot { margin-top: 2em; }
+
+/* フッターのリンク（サイト名の帯の下） */
+.site-foot { padding: 1em 16px 1.6em; background: #f5f5f5; font-family: var(--mt-font); text-align: center; }
+.site-foot nav { display: flex; flex-wrap: wrap; justify-content: center; gap: .3em 1.2em; margin: 0 0 .6em; font-size: 13px; }
+.site-foot a { color: var(--mt-ink); }
+.site-foot small { font-size: 12px; color: var(--mt-sub); }
+
+/* ポリシーページ（運営者情報・プライバシーポリシー・広告掲載について） */
+.policy-lead { color: var(--mt-sub); font-size: 15px; }
+.policy-dl { display: grid; grid-template-columns: 7em 1fr; margin: 0 0 1.4em; border-top: 1px solid var(--mt-rule); font-size: 15px; line-height: 1.8; }
+.policy-dl dt, .policy-dl dd { margin: 0; padding: .7em .4em; border-bottom: 1px solid var(--mt-rule); }
+.policy-dl dt { font-weight: 700; background: var(--mt-blue-bg); }
+.policy-date { margin-top: 2em !important; text-align: right; font-size: 13px; color: var(--mt-sub); }
+@media (max-width: 480px) {
+  .policy-dl { grid-template-columns: 1fr; }
+  .policy-dl dt { border-bottom: 0; padding-bottom: .2em; }
+}

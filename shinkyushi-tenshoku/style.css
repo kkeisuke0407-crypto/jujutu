@@ -1,11 +1,9 @@
 /* ==== このページの枠（国試黒本治療家エージェント／体験談ランキング型） ====
    部品の見た目は parts.css（LPパーツ集_体験談ランキング型・無改変）。
-   ここには、見本ページ（k18-kihei-kaitori）と同じページ枠、改行の調整、
-   台本v7で「既存パーツに無理にはめず専用で」と指定された FV だけを置く。 */
-*, *::before, *::after { box-sizing: border-box; }
-body { margin: 0; background: #fff; padding-bottom: 90px; } /* mt-sticky のぶん */
-img { max-width: 100%; height: auto; }
-.mt-wrap { max-width: 680px; margin: 0 auto; padding: 0 16px 24px; }
+   ここには、改行の調整と、台本v7で「既存パーツに無理にはめず専用で」と指定された FV だけを置く。
+   ページ枠・サイト名の帯・フッターはサイト共通の ../site.css */
+body { padding-bottom: 90px; } /* mt-sticky のぶん */
+.mt-prbar { margin-top: .8em; } /* サイト名の帯とのすき間 */
 .mt-figure { margin: 1.2em 0; }
 .mt-figure img { display: block; width: 100%; border-radius: 6px; }
 
