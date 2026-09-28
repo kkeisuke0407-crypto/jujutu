@@ -1,0 +1,14 @@
+/* ==== このページの枠（国試黒本治療家エージェント／体験談ランキング型） ====
+   部品の見た目は parts.css（LPパーツ集_体験談ランキング型・無改変）。
+   ここには、見本ページ（k18-kihei-kaitori）と同じページ枠と、FV背景画像の指定だけを置く。 */
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: #fff; }
+img { max-width: 100%; height: auto; }
+.mt-wrap { max-width: 680px; margin: 0 auto; padding: 0 16px 24px; }
+.mt-title { margin: 1em 0 .6em; font-size: 22px; font-weight: 700; line-height: 1.5; }
+.mt-sitebar--foot { margin-top: 2em; }
+
+/* FV：アイキャッチ（悩みの吹き出し）の背景に施術室の画像を敷く。
+   images/fv-bg.webp は元画像（1916×821）を右寄せで16:10に切り出し、1200×750に縮小したもの。
+   読み込めないときは parts.css と同じグラデーションが出る。 */
+.mt-eyecatch { background: url("images/fv-bg.webp") center / cover no-repeat, linear-gradient(135deg, #fde2e4, #e2ecfb); }
