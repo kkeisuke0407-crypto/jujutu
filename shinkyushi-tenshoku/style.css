@@ -20,10 +20,13 @@ body { padding-bottom: 90px; } /* mt-sticky のぶん */
 .lp-fv__lead { margin: 0 !important; font-size: 16px; line-height: 1.8; }
 .lp-fv__lead b { color: var(--mt-red); }
 
-/* スマホ：縦長のFV画像（上に壁を足したもの）の、壁の部分に文字を入れる */
+/* スマホ：人物を中心に切り出した縦長画像。顔は上に出したまま、文字は下半分（体の上）に重ねる */
 @media (max-width: 599px) {
-  .lp-fv { aspect-ratio: 750 / 1161; padding: 26px 20px;
-    background: url("images/fv-hero-sp.webp") center top / cover no-repeat, #f7f5f2; }
+  .lp-fv { display: flex; flex-direction: column; justify-content: flex-end; aspect-ratio: 750 / 1080; padding: 20px 20px 22px;
+    background:
+      linear-gradient(180deg, rgba(247,245,242,0) 42%, rgba(247,245,242,.88) 60%, rgba(247,245,242,.95) 100%),
+      url("images/fv-hero-sp.webp") center top / cover no-repeat,
+      #f7f5f2; }
 }
 /* PC：画像の左の余白に文字を重ねる */
 @media (min-width: 600px) {
