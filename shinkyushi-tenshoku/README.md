@@ -20,6 +20,7 @@
 | `images/training-time.webp` | 画像v9。SECTION1「④ 勉強会・研修の時間帯」の本文直後（1536×1024） |
 | `images/workplace-choice-a.webp` | 画像v9。SECTION3 のH2直下（mt-worryの前）＋「※画像はイメージです。」（1536×1024） |
 | `images/five-reasons.webp` | 画像v9。SECTION4 のH2直下（①の前）（1536×1024） |
+| `images/summary-checkpoints.webp` | 画像v9。SECTION7「まとめ」のH2直下、結論ボックスの前（1536×1024） |
 | `images/kyujin-3rei.webp` | SECTION2 求人例A/B/Cの比較画像（1200×675）。タップで拡大表示 |
 
 ## 公開前にやること
@@ -53,7 +54,7 @@
 - `mt-sticky` のscriptは、監視対象を早期CTA（`#cta-early`）にしている（v7「早期CTA通過後から表示」）。
 - 追従ボタンのひとことは「＼希望条件を無料で相談／」（v6本文の文言）。
 - 口コミ後のテキストリンクの注記は「└希望条件を無料で相談する」（v6のボタン文言）。
-- 画像v9（`hozon/案件_国試黒本治療家エージェント/06_画像設計_v9/CLAUDE_実装指示.md`）：training-time・workplace-choice-a・five-reasons を配置済み。summary-checkpoints（まとめのH2直下）は、hozon のZIPが途中で切れていて画像が未入手のため未配置。
+- 画像v9（`hozon/案件_国試黒本治療家エージェント/06_画像設計_v9/CLAUDE_実装指示.md`）：4枚（training-time・workplace-choice-a・five-reasons・summary-checkpoints）を配置済み。hozon のZIPは途中で切れていたため、画像はチャットで受け取ったものを使用。
 - 広告主の訴求の補強は、公式サイト（kurohon.jp/agent・/agent/service・/agent/staff）、運営会社のプレスリリース（2025年4月3日）、公式バナーで確認できたものだけ。他社LPにある「業界No.1」「求人3,000件以上」「年収50万円以上アップ」「LINE相談」「条件交渉力」「しつこい電話なし」は公式で確認できないため入れていない。
 - `mt-check` は台本v7の目安（2回）を超えて3回（4つの中身／こんな人におすすめ／運営面）。
 - 会話のBさんは、指示により男性のエージェント風（表示名「担当者」）として敬語で答える形に書き換え。Aさんも相手に合わせて敬語に。内容（給与・休日→鍼を打てない職場→施術内容は分からない→鍼灸割合で比べる）は台本どおり。
