@@ -54,3 +54,6 @@ body { padding-bottom: 90px; } /* mt-sticky のぶん */
 
 /* 画像直下の小さな注記（例：※画像はイメージです。）。画像は既存の mt-figure を使う */
 .mt-figure + .lp-image-note { margin: -.7em 0 1.4em !important; font-size: 11px; line-height: 1.6; color: #888; text-align: center; }
+
+/* サービス早見（mt-spec）の中の「相談・利用は完全無料」：箱の端にくっつかないよう内側に余白を取り、中央に置く */
+.mt-spec > .mt-oneline { margin: .3em 1em 0 !important; text-align: center; }
