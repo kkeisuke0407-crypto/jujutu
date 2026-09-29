@@ -60,3 +60,7 @@ body { padding-bottom: 90px; } /* mt-sticky のぶん */
 /* 評価表（mt-spec__grid）の下にも区切り線を引き、「相談・利用は完全無料」との間をあける */
 .mt-spec__grid + .mt-oneline { margin-top: 1em !important; }
 .mt-spec__grid { border-bottom: 2px solid var(--mt-blue); }
+
+/* 画像指示枠（mt-imgslot）：本番では隠す。URLに ?draft=1 を付けたときだけ表示（GPTに貼る指示文を確認する用） */
+.mt-imgslot { display: none; }
+html.is-draft .mt-imgslot { display: block; }

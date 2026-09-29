@@ -62,3 +62,23 @@
 - 品質修正（`hozon/案件_国試黒本治療家エージェント/08_品質修正_Claude指示.md`）を反映：SECTION2の導入、SECTION3のサービス名初公開の流れ、公開直後の説明を3点に軽量化、旧サービス名（名称変更）の説明と「評価は編集部の主観」の注記を削除。早期CTAは変更なし。
 - 品質修正の更新版（おすすめポイント5項目に戻す・preview.html に合わせる）を反映。SECTION4の①〜⑤は preview.html どおり現状維持。
 - ◎の評価表は視覚的に効くため、指示により復活（品質修正で一度削除したもの）。「評価は編集部の主観」の注記は戻していない。
+
+## 7LP（強化版台本・2026-09-29）
+
+台本（正本）：`hozon/案件_国試黒本治療家エージェント/11_7LP制作台本_強化版/`（COMMON.md＋セル別）。C02（このフォルダ）は強化版の文言に修正、残り6セルはC02の骨組みで新規作成。6セルは CSS・画像をこのフォルダ（`../shinkyushi-tenshoku/`）から共有する。
+
+| セル | 訴求 | URL |
+|---|---|---|
+| C00 | Control（条件の中身） | /shinkyushi-tenshoku-joken/ |
+| C01 | 勉強会・研修時間 | /shinkyushi-tenshoku-kenshu/ |
+| C02 | 鍼灸割合 | /shinkyushi-tenshoku/ |
+| C03 | 1日の施術人数 | /shinkyushi-tenshoku-ninzu/ |
+| C04 | 自費診療割合 | /shinkyushi-tenshoku-jihi/ |
+| C05 | 休日・有給 | /shinkyushi-tenshoku-kyujitsu/ |
+| C08 | 給与・前職給与考慮 | /shinkyushi-tenshoku-kyuyo/ |
+
+- 画像指示枠（`mt-imgslot`）：新しく必要な画像の場所に、GPTに貼る指示文・画像内の文字・alt・添付する参照画像を書いてある。本番では非表示で、URLに `?draft=1` を付けると表示される。画像ができたら `<figure class="mt-figure"><img …></figure>` に差し替える（求人例の比較画像は、差し替え時に下の「求人例A/B/C」カード3つも画像に置き換える）
+- 求人例の出典URLは、各カードの直前の HTML コメント（`<!-- 出典: … -->`）
+- 6セルの生成スクリプト：hozon の同フォルダ `build_lp7.py`（C02の修正は `patch_c02.py`）
+- 各ページ末尾の `CTA_URL` にセルごとの計測リンクを入れる（SubID等でセルを分ける）
+- 6セルは台本どおり、C02にある「なぜ国試黒本（5つの理由）」「運営面」「まとめ」は入れていない

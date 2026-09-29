@@ -330,3 +330,30 @@
 .mt-sticky .mt-cta { margin: 0; }
 .mt-sticky .mt-cta__btn { padding: .75em .6em; font-size: 15.5px; }
 @media (prefers-reduced-motion: reduce) { .mt-sticky { transition: none; } }
+
+/* ============================================================
+   画像（2026-09-29）
+   ============================================================ */
+
+/* 画像指示枠（LP作成中に置く。公開前に画像へ差し替える）：紫＝新規生成／青＝既存素材／橙＝広告主バナー */
+.mt-imgslot { margin: 1.4em 0; border: 2px dashed #b39ddb; border-radius: 8px; background: #f6f1fb; color: #4a2c7a; font-size: 13px; line-height: 1.6; overflow: hidden; }
+.mt-imgslot--have { border-color: #9cc3e8; background: #eef5fc; color: #0d3c6e; }
+.mt-imgslot--ad { border-color: #f5b98a; background: #fff4ea; color: #7a3e00; }
+.mt-imgslot__head { display: flex; flex-wrap: wrap; align-items: center; gap: .3em .5em; padding: .5em .7em; border-bottom: 1px dashed currentColor; background: rgba(255,255,255,.75); font-size: 12px; }
+.mt-imgslot__id { padding: 0 .45em; border-radius: 4px; background: #7b1fa2; color: #fff; font-weight: 900; }
+.mt-imgslot--have .mt-imgslot__id { background: #1565c0; }
+.mt-imgslot--ad .mt-imgslot__id { background: #ef6c00; }
+.mt-imgslot__kind { font-weight: 900; }
+.mt-imgslot__todo { margin-left: auto; color: #c62828; font-weight: 700; }
+.mt-imgslot__box { display: grid; place-items: center; padding: 1em; text-align: center; font-weight: 700; }
+.mt-imgslot__spec { display: grid; grid-template-columns: 6.2em 1fr; gap: .2em .6em; margin: 0; padding: .6em .8em; border-top: 1px dashed currentColor; background: rgba(255,255,255,.75); font-size: 12.5px; }
+.mt-imgslot__spec dt { font-weight: 900; }
+.mt-imgslot__spec dd { margin: 0; }
+.mt-imgslot__prompt { padding: 0 .8em .7em; background: rgba(255,255,255,.75); }
+.mt-imgslot__prompt summary { cursor: pointer; font-weight: 700; }
+.mt-imgslot__prompt pre { margin: .4em 0 0; padding: .6em .7em; border-radius: 6px; background: #fff; border: 1px solid rgba(0,0,0,.08); color: #333; font-size: 11.5px; line-height: 1.6; white-space: pre-wrap; }
+
+/* 本文画像（画像指示枠を差し替えた後の形） */
+.mt-img { margin: 1.2em 0 .6em; }
+.mt-img img { display: block; width: 100%; height: auto; border-radius: 4px; }
+.mt-img__note { margin: .3em 0 0; color: var(--mt-sub); font-size: 11px; text-align: right; }
