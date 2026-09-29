@@ -61,6 +61,4 @@ body { padding-bottom: 90px; } /* mt-sticky のぶん */
 .mt-spec__grid + .mt-oneline { margin-top: 1em !important; }
 .mt-spec__grid { border-bottom: 2px solid var(--mt-blue); }
 
-/* 画像指示枠（mt-imgslot）：本番では隠す。URLに ?draft=1 を付けたときだけ表示（GPTに貼る指示文を確認する用） */
-.mt-imgslot { display: none; }
-html.is-draft .mt-imgslot { display: block; }
+/* 画像指示枠（mt-imgslot）：画像ができるまで常に表示する（GPTに貼る指示文つき）。画像ができたら mt-figure の img に差し替える */
