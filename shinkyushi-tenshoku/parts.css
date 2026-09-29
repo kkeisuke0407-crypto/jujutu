@@ -214,7 +214,7 @@
 .mt-info { margin: 1.4em 0; padding: 1em 1.1em .8em; border-radius: 8px; background: var(--mt-blue-bg); }
 .mt-info__ttl { display: flex; align-items: center; gap: .45em; margin: 0 0 .5em !important; color: var(--mt-blue); font-size: 17px; font-weight: 900; line-height: 1.5; }
 .mt-info__ttl::before { content: "i"; flex: 0 0 1.4em; display: grid; place-items: center; width: 1.4em; height: 1.4em; border-radius: 50%; background: var(--mt-blue); color: #fff; font-family: Georgia, "Times New Roman", serif; font-size: .85em; font-weight: 900; }
-.mt-info--tip .mt-info__ttl::before { content: "💡"; background: none; font-family: inherit; font-size: 1.05em; }
+.mt-info--tip .mt-info__ttl::before { content: ""; background: var(--mt-blue) url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='white'%20stroke-width='2.2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M9%2018h6M10%2021h4'/%3E%3Cpath%20d='M12%203a6%206%200%200%200-3.6%2010.8c.6.5%201%201.2%201%202v.2h5.2v-.2c0-.8.4-1.5%201-2A6%206%200%200%200%2012%203z'/%3E%3C/svg%3E") center / 68% no-repeat; }
 .mt-info p, .mt-info li { font-size: 15px; line-height: 1.75; }
 .mt-info p:last-child { margin-bottom: 0; }
 .mt-info ul { margin: 0; padding-left: 1.3em; }
@@ -259,13 +259,6 @@
 .mt-fit__col--ng .mt-fit__ttl { background: var(--mt-red); }
 .mt-fit ul { margin: 0; padding: .6em .6em .3em 1.5em; font-size: 13.5px; line-height: 1.6; }
 .mt-fit li { margin: 0 0 .4em; }
-
-/* 条件タイル（2×2） */
-.mt-tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin: 1.3em 0 !important; padding: 0 !important; list-style: none; }
-.mt-tiles li { margin: 0; border-radius: 6px; overflow: hidden; background: var(--mt-yellow-bg); text-align: center; }
-.mt-tiles__k { display: block; padding: .35em .3em; background: var(--mt-orange); color: #fff; font-size: 14px; font-weight: 900; line-height: 1.4; }
-.mt-tiles__ico { display: grid; place-items: center; height: 72px; font-size: 38px; line-height: 1; }
-.mt-tiles__ico img { width: 56px; height: 56px; object-fit: contain; }
 
 /* チェックリスト（当てはまったら） */
 .mt-check { margin: 1.4em 0; padding: 1em 1em .7em; border: 2px dashed var(--mt-orange); border-radius: 8px; background: #fff; }
