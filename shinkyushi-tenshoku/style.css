@@ -57,3 +57,6 @@ body { padding-bottom: 90px; } /* mt-sticky のぶん */
 
 /* サービス早見（mt-spec）の中の「相談・利用は完全無料」：箱の端にくっつかないよう内側に余白を取り、中央に置く */
 .mt-spec > .mt-oneline { margin: .3em 1em 0 !important; text-align: center; }
+/* 評価表（mt-spec__grid）の下にも区切り線を引き、「相談・利用は完全無料」との間をあける */
+.mt-spec__grid + .mt-oneline { margin-top: 1em !important; }
+.mt-spec__grid { border-bottom: 2px solid var(--mt-blue); }
